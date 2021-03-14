@@ -13,5 +13,12 @@ public class WelcomerTest {
 	public void welcomerSaysWelcome() {
 		assertThat(welcomer.sayWelcome(), containsString("Welcome"));
 	}
+	public void welcomerSaysFarewell() {
+		assertThat(welcomer.sayFarewell(), containsString("Farewell"));
+	}
+	public void welcomerSaysHunter() {
+		assertThat(welcomer.SaysWelcome(), containsString("hunter"));
+		assertThat(welcomer.sayFarewell(), containsString("hunter"));
+	}
 
 }
