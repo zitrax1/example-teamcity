@@ -1,7 +1,7 @@
-package hello;
+package plaindoll;
 
 public class Welcomer{
 	public String sayWelcome() {
-		return "Welcome back, Good Hunter!";
+		return "Welcome home, good hunter. What is it your desire?";
 	}
 }

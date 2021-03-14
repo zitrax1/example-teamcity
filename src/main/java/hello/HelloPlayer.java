@@ -1,4 +1,4 @@
-package hello;
+package plaindoll;
 
 import org.joda.time.LocalTime;
 
