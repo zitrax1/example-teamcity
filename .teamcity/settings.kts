@@ -60,7 +60,7 @@ object Build : BuildType({
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
 
             conditions {
-                contains("teamcity.build.branch", "master")
+                contains("teamcity.build.branch", "mter")
             }
             goals = "package"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
