@@ -66,7 +66,7 @@ object BuildDeploy : BuildType({
             name = "Deploy to Nexus"
 
             conditions {
-                contains("teamcity.build.branch", "master")
+                contains("teamcity.build.branch", "marster")
             }
             goals = "clean deploy"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
