@@ -6,13 +6,18 @@
 	<groupId>org.netology</groupId>
 	<artifactId>plaindoll</artifactId>
 	<packaging>jar</packaging>
-	<version>0.2.0</version>
+	<version>0.2.5</version>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-
+	<distributionManagement>
+		<repository>
+				<id>nexus</id>
+				<url>http://178.154.233.99:8081/repository/maven-releases</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
