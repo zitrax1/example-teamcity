@@ -24,7 +24,7 @@ public class WelcomerTest {
 	}
 	@Test
 	public void welcomerSaysYes(){
-		assertThat(welcomer.No(), containsString("Yes"))
+		assertThat(welcomer.No(), containsString("Yes"));
 	}
 
 }
