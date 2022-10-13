@@ -11,6 +11,6 @@ public class Welcomer{
 		return "Not enough gold";
 	}
 	public String saySome(){
-		return "in the way";
+		return "something in the way";
 	}
 }
