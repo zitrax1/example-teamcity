@@ -22,12 +22,12 @@
           <param name="userSettingsSelection" value="settings.xml" />
         </parameters>
       </runner>
-      <runner id="Maven_jar" name="maven_jar" type="Maven2">
+      <runner id="Maven_test" name="maven-test" type="Maven2">
         <conditions>
-          <equals name="teamcity.build.branch" value="master" />
+          <does-not-contain name="teamcity.build.branch" value="master" />
         </conditions>
         <parameters>
-          <param name="goals" value="clean package" />
+          <param name="goals" value="clean test" />
           <param name="localRepoScope" value="agent" />
           <param name="maven.path" value="%teamcity.tool.maven.DEFAULT%" />
           <param name="pomLocation" value="pom.xml" />
@@ -36,12 +36,12 @@
           <param name="userSettingsSelection" value="settings.xml" />
         </parameters>
       </runner>
-      <runner id="Maven_test" name="maven-test" type="Maven2">
+      <runner id="Maven_jar" name="maven_jar" type="Maven2">
         <conditions>
-          <does-not-contain name="teamcity.build.branch" value="master" />
+          <equals name="teamcity.build.branch" value="master" />
         </conditions>
         <parameters>
-          <param name="goals" value="clean test" />
+          <param name="goals" value="clean package" />
           <param name="localRepoScope" value="agent" />
           <param name="maven.path" value="%teamcity.tool.maven.DEFAULT%" />
           <param name="pomLocation" value="pom.xml" />
